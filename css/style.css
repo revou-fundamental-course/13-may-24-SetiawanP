@@ -1,0 +1,108 @@
+header {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+.section-1 {
+    width: 100%;
+    margin: 2px;
+    border: 0px;
+    padding: 8px;
+    color: blue;
+    border-radius: 4px;
+    font-size: large;
+}
+
+.section-2 {
+    width: 100%;
+    margin: 2px;
+    border: 0px;
+    padding: 8px;
+    color: blue;
+    border-radius: 4px;
+    font-size: large;
+}
+
+.section-1 a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.section-2 a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.section-1:hover {
+    background-color: blue;
+    color: white;
+    border-radius: 4px;
+}
+
+.section-2:hover {
+    background-color: blue;
+    color: white;
+    border-radius: 4px;
+}
+
+
+.gambar-segitiga {
+    text-align: center;
+}
+
+.info-segitiga>p {
+    border: 10px;
+    margin: 0px;
+}
+
+.gambar-jajargenjang {
+    text-align: center;
+}
+
+.info-jajargenjang>p {
+    border: 10px;
+    margin: 0px;
+}
+
+input {
+    width: 100%;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+.isian-segitiga>p {
+    border: 10px;
+    margin: 0px;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+button:hover {
+    color: black;
+}
+
+.hitung {
+    text-align: center;
+}
+
+.reset {
+    text-align: end;
+}
+
+#luasReset {
+    background-color: orange;
+}
+
+#kelilingReset {
+    background-color: orange;
+}

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Segitiga</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <header> 
+            <!-- Ini Judul Halaman -->
+            <h1>Welcome To Kalkulator Matematik </h1>
+            <section>
+                <p>Hai Sobat, selamat datang di kalkulator matematik segitiga
+                <br/> Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar segitiga</p>
+            </section>
+        </header>
+        <section> 
+            <!-- Ini Navigasi Halaman -->
+            <div class="section-1">
+                <a href="#section-1"Segitiga>
+                    Segitiga
+                </a>
+            </div>
+            <div class="section-2">
+                <a href="#section-2"Jajargenjang>
+                    Jajar Genjang
+                </a>
+            </div>
+        </section>
+    </header>
+    <main>
+        <!-- LUAS SEGITIGA -->
+        <!-- Ini Konten Atas -->
+        <section id="section-1">
+            <header>
+                <h2>Luas Segitiga</h2>
+            </header>
+        <section>
+            <div class="gambar-segitiga">
+                <img src="https://aura-ilmu.com/global/wp-content/uploads/sites/2/2020/11/segitiga-300x210.jpg.webp" alt="Segitiga Sama Sisi">
+            </div>
+            <div class="info-segitiga">
+                <p>Rumus Luas Segitiga yaitu :</p>
+                <br>
+                <h4>L = 1/2 x a x t</h4>
+                <p>Dimana :</p>
+                <p>L = Luas</p>
+                <p>A = Alas</p>
+                <p>T = Tinggi</p>
+            </div>  
+        </section>
+            <hr>
+        <section>
+            <!-- Ini Konten Bawah  -->
+            <header>
+                <h2>Hitung Luas Segitiga</h2>
+            </header>
+            <section>
+                <form class="isian-segitiga">
+                    <section>
+                        <label for="alas">A:</label>
+                        <input type="number" id="alas-segitiga" placeholder="0" required>
+                        <label for="tinggi">T:</label>
+                        <input type="number" id="tinggi-segitiga" placeholder="0" required>
+                    </section>
+                        <input type="text" id="luasResult"/>
+                        <p>L = 1/2 x a x t</p>
+                        <p>L = 1/2 x a x t</p>
+                        <p>L = 1/2 x a x t</p>
+                    <div class="hitung">
+                        <button type="button" onclick="luasCalc();">Hitung</button>
+                    </div>
+                    <div class="reset">
+                        <button id="luasReset" type="button" onclick="clear">Reset</button>
+                    </div>
+                </form>
+            </section>
+        </section>
+        </section>
+    </main>
+    <main>
+        <!-- KELILING SEGITIGA -->
+        <!-- Ini Konten Atas -->
+        <section id="section-1">
+            <header>
+                <h2>Keliling Segitiga</h2>
+            </header>
+        <section>
+            <div class="gambar-segitiga">
+                <img src="https://aura-ilmu.com/global/wp-content/uploads/sites/2/2020/11/segitiga-300x210.jpg.webp" alt="Segitiga Sama Sisi">
+            </div>
+            <div class="info-segitiga">
+                <p>Rumus Keliling Segitiga yaitu :</p>
+                <br>
+                <h4>K = S1 + S2 + S3</h4>
+                <p>Dimana :</p>
+                <p>K = Keliling</p>
+                <p>S1 = Sisi A</p>
+                <p>S2 = Sisi B</p>
+                <p>S3 = Sisi C</p>
+            </div>  
+        </section>
+            <hr>
+        <section>
+            <!-- Ini Konten Bawah  -->
+            <header>
+                <h2>Hitung Keliling Segitiga</h2>
+            </header>
+            <section>
+                <form class="isian-segitiga">
+                    <section>
+                        <label for="s-1">S1:</label>
+                        <input type="number" id="sisi1" placeholder="0">
+                        <label for="s-2">S2:</label>
+                        <input type="number" id="sisi2" placeholder="0">
+                        <label for="s-3">S3:</label>
+                        <input type="number" id="sisi3" placeholder="0">
+                    </section>
+                        <input type="text" id="kelilingResult"/>
+                        <p>K = S1 + S2 + S3</p>
+                        <p>K = S1 + S2 + S3</p>
+                        <p>K = S1 + S2 + S3</p>
+                    <div class="hitung">
+                        <button type="button" onclick="kelilingCalc();" >Hitung</button>
+                    </div>
+                    <div class="reset">
+                        <button id="kelilingReset" type="button" onclick="clear" >Reset</button>
+                    </div>
+                </form>
+            </section>
+        </section>
+        </section>
+    </main>
+    <main>
+        <!-- LUAS JAJARGENJANG -->
+        <!-- Ini Konten Atas -->
+        <section id="section-2">
+            <header>
+                <h2>Luas Jajar Genjang</h2>
+            </header>
+        <section>
+            <div class="gambar-jajargenjang">
+                <img src="https://disk.mediaindonesia.com/thumbs/480x320/news/2022/11/0e7160c19d670d3d5b87c9ce8214c871.jpg" alt="Jajar Genjang">
+            </div>
+            <div class="info-jajargenjang">
+                <p>Rumus Luas Jajar Genjang yaitu :</p>
+                <br>
+                <h4>L = a x t</h4>
+                <p>Dimana :</p>
+                <p>L = Luas</p>
+                <p>A = Alas</p>
+                <p>T = Tinggi</p>
+            </div>  
+        </section>
+            <hr>
+        <section>
+            <!-- Ini Konten Bawah  -->
+            <header>
+                <h2>Hitung Luas Jajar Genjang</h2>
+            </header>
+            <section>
+                <form class="isian-jajargenjang">
+                    <section>
+                        <label for="Alas">A:</label>
+                        <input type="number" id="a" placeholder="0">
+                        <label for="Tinggi">T:</label>
+                        <input type="number" id="t" placeholder="0">
+                    </section>
+                        <input type="text" id="result"/>
+                        <p> Ha</p>
+                        <p>L = a x t</p>
+                        <p>L = a x t</p>
+                        <p>L = a x t</p>
+                    <div class="hitung">
+                        <button type="button" onclick="calc();" >Hitung</button>
+                    </div>
+                    <div class="reset">
+                        <button id="reset" type="button" onclick="clear" >Reset</button>
+                    </div>
+                </form>
+            </section> 
+        </section>
+        </section>
+    </main>
+    <main>
+        <!-- KELILING JAJARGENJANG -->
+        <!-- Ini Konten Atas -->
+        <section id="section-2">
+            <header>
+                <h2>Keliling Jajar Genjang</h2>
+            </header>
+        <section>
+            <div class="gambar-jajargenjang">
+                <img src="https://disk.mediaindonesia.com/thumbs/480x320/news/2022/11/0e7160c19d670d3d5b87c9ce8214c871.jpg" alt="Jajar Genjang">
+            </div>
+            <div class="info-jajargenjang">
+                <p>Rumus Keliling Jajar Genjang yaitu :</p>
+                <br>
+                <h4>K = 2 x ( a + b )</h4>
+                <p>Dimana :</p>
+                <p>K = Keliling</p>
+                <p>A = Panjang</p>
+                <p>B = Lebar</p>
+            </div>  
+        </section>
+            <hr>
+        <section>
+            <!-- Ini Konten Bawah  -->
+            <header>
+                <h2>Hitung Keliling Jajar Genjang</h2>
+            </header>
+            <section>
+                <form class="isian-jajargenjang">
+                    <section>
+                        <label for="Keliling">K:</label>
+                        <input type="number" placeholder="2">
+                        <label for="Alas">A:</label>
+                        <input type="number" placeholder="0">
+                        <label for="Tinggi">B:</label>
+                        <input type="number" placeholder="0">
+                    </section>
+                        <p>K = 2 x ( a + b )</p>
+                        <p>K = 2 x ( a + b )</p>
+                        <p>K = 2 x ( a + b )</p>
+                    <div class="hitung">
+                        <button type="button" onclick="calc();" >Hitung</button>
+                    </div>
+                    <div class="reset">
+                        <button id="reset" type="button" onclick="clear" >Reset</button>
+                    </div>
+                </form>
+            </section>
+        </section>
+        </section>
+    </main>
+    <footer>
+        <p>Kalkulator ini dibuat untuk mempermudah dalam menghitung bangun datar</p>
+    </footer>    
+    <script src="/js/script.js"></script>
+</body>
+</html>
