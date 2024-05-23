@@ -12,20 +12,20 @@
             <!-- Ini Judul Halaman -->
             <h1>Welcome To Kalkulator Matematik </h1>
             <section>
-                <p>Hai Sobat, selamat datang di kalkulator matematik segitiga
-                <br/> Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar segitiga</p>
+                <p>Hai Sobat, selamat datang di kalkulator matematik
+                <br/> Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
             </section>
         </header>
         <section> 
             <!-- Ini Navigasi Halaman -->
             <div class="section-1">
                 <a href="#section-1"Segitiga>
-                    Segitiga
+                    <button class="icon">Segitiga</button>
                 </a>
             </div>
             <div class="section-2">
                 <a href="#section-2"Jajargenjang>
-                    Jajar Genjang
+                    <button class="icon">Jajar Genjang</button>
                 </a>
             </div>
         </section>
@@ -65,15 +65,15 @@
                         <label for="tinggi">T:</label>
                         <input type="number" id="tinggi-segitiga" placeholder="0" required>
                     </section>
-                        <input type="text" id="luasResult"/>
+                        <input type="text" id="segitiga-luas-result"/>
                         <p>L = 1/2 x a x t</p>
                         <p>L = 1/2 x a x t</p>
                         <p>L = 1/2 x a x t</p>
                     <div class="hitung">
                         <button type="button" onclick="luasCalc();">Hitung</button>
                     </div>
-                    <div class="reset">
-                        <button id="luasReset" type="button" onclick="clear">Reset</button>
+                    <div>
+                        <button id="reset" type="button" onclick="clear">Reset</button>
                     </div>
                 </form>
             </section>
@@ -112,21 +112,21 @@
                 <form class="isian-segitiga">
                     <section>
                         <label for="s-1">S1:</label>
-                        <input type="number" id="sisi1" placeholder="0">
+                        <input type="number" id="segisisi1" placeholder="0" required>
                         <label for="s-2">S2:</label>
-                        <input type="number" id="sisi2" placeholder="0">
+                        <input type="number" id="segisisi2" placeholder="0" required>
                         <label for="s-3">S3:</label>
-                        <input type="number" id="sisi3" placeholder="0">
+                        <input type="number" id="segisisi3" placeholder="0" required>
                     </section>
-                        <input type="text" id="kelilingResult"/>
+                        <input type="text" id="segitiga-keliling-result"/>
                         <p>K = S1 + S2 + S3</p>
                         <p>K = S1 + S2 + S3</p>
                         <p>K = S1 + S2 + S3</p>
                     <div class="hitung">
-                        <button type="button" onclick="kelilingCalc();" >Hitung</button>
+                        <button type="button" onclick="kelilingCalc();">Hitung</button>
                     </div>
-                    <div class="reset">
-                        <button id="kelilingReset" type="button" onclick="clear" >Reset</button>
+                    <div>
+                        <button id="reset" type="button" onclick="clear">Reset</button>
                     </div>
                 </form>
             </section>
@@ -164,17 +164,16 @@
                 <form class="isian-jajargenjang">
                     <section>
                         <label for="Alas">A:</label>
-                        <input type="number" id="a" placeholder="0">
+                        <input type="number" id="alas-jajargenjang" placeholder="0" required>
                         <label for="Tinggi">T:</label>
-                        <input type="number" id="t" placeholder="0">
+                        <input type="number" id="tinggi-jajargenjang" placeholder="0" required>
                     </section>
-                        <input type="text" id="result"/>
-                        <p> Ha</p>
+                        <input type="text" id="jajargenjang-luas-result"/>
                         <p>L = a x t</p>
                         <p>L = a x t</p>
                         <p>L = a x t</p>
                     <div class="hitung">
-                        <button type="button" onclick="calc();" >Hitung</button>
+                        <button type="button" onclick="jajarLuasCalc();" >Hitung</button>
                     </div>
                     <div class="reset">
                         <button id="reset" type="button" onclick="clear" >Reset</button>
@@ -214,18 +213,17 @@
             <section>
                 <form class="isian-jajargenjang">
                     <section>
-                        <label for="Keliling">K:</label>
-                        <input type="number" placeholder="2">
                         <label for="Alas">A:</label>
-                        <input type="number" placeholder="0">
+                        <input type="number" id="jajasisi1" placeholder="0" required>
                         <label for="Tinggi">B:</label>
-                        <input type="number" placeholder="0">
+                        <input type="number" id="jajasisi2" placeholder="0" required>
                     </section>
+                        <input type="text" id="jajargenjang-keliling-result"/>
                         <p>K = 2 x ( a + b )</p>
                         <p>K = 2 x ( a + b )</p>
                         <p>K = 2 x ( a + b )</p>
                     <div class="hitung">
-                        <button type="button" onclick="calc();" >Hitung</button>
+                        <button type="button" onclick="jajarKelilingCalc();" >Hitung</button>
                     </div>
                     <div class="reset">
                         <button id="reset" type="button" onclick="clear" >Reset</button>
